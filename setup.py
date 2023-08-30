@@ -9,7 +9,7 @@ __version__ = "0.0.0"  #version of you application
 
 REPO_NAME = "Text-Summarization"
 AUTHOR_USER_NAME = "jasmeetsingh-028"
-SRC_REPO = "textSummarization"  #inside folder src
+SRC_REPO = "textSummarization"  #inside folder src  #local package
 AUTHOR_EMAIL = "sjasmeet135@gmail.com"
 
 

@@ -1,0 +1,5 @@
+1. create github repo
+2. setput project template using template.py
+3. setup requirements and long description using requirements.txt and setup.py
+4. add logging (src-> logging-> init.py) exceptions and utils file. 
+5. utils-> common.py  (@ensure_annotations decorator, ConfigBox for dicts examples in n1.ipynb)
