@@ -5,6 +5,7 @@ from textSummarization.logging import logger    #already installed when running 
 
 from textSummarization.pipeline.data_ingestion_s01 import DataIngestionTrainingPipeline
 from textSummarization.pipeline.data_validation_s02 import DataValidationTrainingPipeline
+from textSummarization.pipeline.data_transformation_s03 import DataTransformationTrainingPipeline
 
 EXP_NAME = "Data Ingestion stage"
 try:
@@ -25,3 +26,14 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+EXP__NAME = "Data Transformation stage"
+try:
+   logger.info(f">>>>>> stage {EXP_NAME} started <<<<<<") 
+   data_transformation = DataTransformationTrainingPipeline()
+   data_transformation.main()
+   logger.info(f">>>>>> stage {EXP_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
