@@ -14,7 +14,7 @@ from typing import Any
 
 #function to read any yaml file
 #what is ConfigBox
-@ensure_annotations   #ensure annotations decorator  
+@ensure_annotations  #ensure annotations decorator  
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
 
