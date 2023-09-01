@@ -6,8 +6,9 @@ from textSummarization.logging import logger    #already installed when running 
 from textSummarization.pipeline.data_ingestion_s01 import DataIngestionTrainingPipeline
 from textSummarization.pipeline.data_validation_s02 import DataValidationTrainingPipeline
 from textSummarization.pipeline.data_transformation_s03 import DataTransformationTrainingPipeline
+from textSummarization.pipeline.model_trainer_s04 import ModelTrainerPipeline
 
-EXP_NAME = "Data Ingestion stage"
+EXP_NAME = "Data Ingestion step"
 try:
    logger.info(f">>>>>> Experiment {EXP_NAME} started <<<<<<") 
    data_ingestion = DataIngestionTrainingPipeline()
@@ -17,23 +18,34 @@ except Exception as e:
         logger.exception(e)
         raise e
 
-EXP_NAME = "Data Validation stage"
+EXP_NAME = "Data Validation step"
 try:
-   logger.info(f">>>>>> stage {EXP_NAME} started <<<<<<") 
+   logger.info(f">>>>>> step {EXP_NAME} started <<<<<<") 
    data_validation = DataValidationTrainingPipeline()
    data_validation.main()
-   logger.info(f">>>>>> stage {EXP_NAME} completed <<<<<<\n\nx==========x")
+   logger.info(f">>>>>> step {EXP_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e
 
-EXP__NAME = "Data Transformation stage"
+EXP__NAME = "Data Transformation step"
 try:
-   logger.info(f">>>>>> stage {EXP_NAME} started <<<<<<") 
+   logger.info(f">>>>>> step {EXP_NAME} started <<<<<<") 
    data_transformation = DataTransformationTrainingPipeline()
    data_transformation.main()
-   logger.info(f">>>>>> stage {EXP_NAME} completed <<<<<<\n\nx==========x")
+   logger.info(f">>>>>> step {EXP_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e
+
+EXP__NAME = "Data Transformation step"
+try:
+   logger.info(f">>>>>> step {EXP_NAME} started <<<<<<") 
+   data_transformation = ModelTrainerPipeline()
+   data_transformation.main()
+   logger.info(f">>>>>> step {EXP_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
 
