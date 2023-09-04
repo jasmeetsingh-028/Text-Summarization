@@ -11,6 +11,7 @@ class ModelPredictionPipeline:
             config = ConfigurationManager()
             model_pred_config = config.get_model_prediction_config()
             prediction = ModelPrediction(config=model_pred_config)
-            print(prediction.predict(text =  self.text))
+            output_text = prediction.predict(text =  self.text)
+            return output_text
         except Exception as e:
             raise e
