@@ -15,3 +15,11 @@
 6. Update pipeline
 7. Update main.py
 8. app.py
+
+
+deployment
+1. building the docker image of our source code 
+2. push source to ecr - elastic container registory .ecr
+3. Launch EC2 machine
+4. pull your image from ECR to EC2
+5. launch you docker image in EC2
