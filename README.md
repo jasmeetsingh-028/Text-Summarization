@@ -49,6 +49,6 @@ If you'd like to contribute to this project, please follow these guidelines:
 
 ## Issues and Support
 
-If you encounter any issues or have questions, please feel free to open an issue in the GitHub repository. We'll do our best to assist you.
+If you encounter any issues or have questions, please feel free to open an issue in the GitHub repository.
 
-Thank you for using the Text Summarization Streamlit Application! We hope it helps you efficiently generate text summaries and gain valuable insights from your data.
+Thank you for using the Text Summarization Streamlit Application! I hope it helps you efficiently generate text summaries and gain valuable insights from your data.
