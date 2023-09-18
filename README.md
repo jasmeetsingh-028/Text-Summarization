@@ -3,6 +3,9 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/jasmeetsingh-028/Text-Summarization/blob/main/LICENSE.md)
+
+
 This repository contains a Streamlit-based application for text summarization using the "sasum dialogue summarization" dataset and the "google/pegasus-cnn_dailymail" model. The application is divided into different pipeline steps for data ingestion, data validation, data transformation, and model training. Additionally, it uses logging to capture experiment details and errors.
 
 ## Application Features
