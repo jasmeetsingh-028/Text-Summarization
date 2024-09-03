@@ -1,11 +1,7 @@
 # Text Summarization Streamlit Application
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pnhMW99OsfIlQAc98XCU3MaclwTf6g7P) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/jasmeetsingh-028/Text-Summarization/blob/main/LICENSE.md)
-
-### Open Application
 [![Open Application](https://img.shields.io/badge/Hugging%20Face-Open%20Application-blue)](https://huggingface.co/spaces/ailm/text-summarizat-gradio-app)
-
-### Access Model
 [![Access Model](https://img.shields.io/badge/Hugging%20Face-Access%20Model-blue)](https://huggingface.co/ailm/pegsus-text-summarization)
 
 This repository contains a Streamlit-based application for text summarization using the "sasum dialogue summarization" dataset and the "google/pegasus-cnn_dailymail" model. The application is divided into different pipeline steps for data ingestion, data validation, data transformation, and model training. Additionally, it uses logging to capture experiment details and errors.
